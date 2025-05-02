@@ -1,0 +1,10 @@
+[project]
+name = "retail-search-buddy"
+version = "0.1.0"
+description = "A useful utility for understanding schema.org"
+readme = "README.md"
+requires-python = ">=3.12,<4"
+license = "Apache 2.0"
+dependencies = [
+    "google-adk>=0.3.0",
+]
