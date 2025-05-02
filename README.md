@@ -30,8 +30,7 @@ The ultimate goal is to help Google Cloud customers to adopt Vertex AI Search fo
 1. Log into the Google Cloud Console.
 1. Search for `RAG Engine`
 1. Click on `Create Corpus`
-1. 
-
+1. Setup the bucket created above as the source.
 
 ## Project Setup
 
@@ -40,7 +39,18 @@ The ultimate goal is to help Google Cloud customers to adopt Vertex AI Search fo
 1. [Create your virtual environment](#create-virtual-environment)
 1. Activate your virtual environment `source .venv/bin/activate`
 1. Resolve dependencies `uv sync`
-1. Run the agent: `adk web`
+1. Run the agent: `adk web` or `adk run retail_agent` to test the command line.
+
+#### Example Prompts:
+
+User: 'Show me an example product in json format from schema.org'
+Agent: ...
+
+User: attaches file, 'Can you use this CSV file to write a python program to generate valid schema.org products?'
+Agent: ...
+
+User: attaches pdf of output documentation template, 'Given this template can you map the field of the CSV file to the appropriate fields and provide an explanation of why you chose the mapping?`
+Agent: ...
 
 ### Create Virtual Environment
 
